@@ -1,23 +1,28 @@
-section.header
+section.header#top
   .header-wrap
-    .nav-bar
-      .logo Babs Craig
-      .nav
+    .nav
+      a.nav-link(href="#top")
+        .logo Babs Craig
+        
+      .nav-bar 
         ul
           li
-            a(href="#") About Me
+            a.nav-link(href="#hero") About Me
           li
-            a(href="#") Skill Set
+            a.nav-link(href="#skillset") Skillset
           li
-            a(href="#") My Work
+            a.nav-link(href="#mywork") My Work
           li 
-            a(href="#") Contact Me
+            a(target="blank" href="https://mycodingwaka.wordpress.com") My Blog
+          li 
+            a.nav-link(href="#blog") Connect
           li
-            a(href="#") My R&eacute;sum&eacute;
+            a.nav-link(href="#blog") My R&eacute;sum&eacute;
     
     .tagline
-      h1 DIGITAL SOLUTIONS CREATIVE DESIGN
+      h1 DIGITAL #[span SOLUTIONS] #[span CREATIVE] DESIGN
       p.lead BABS CRAIG, FRONT-END DEVELOPER
       
     .arrow
-      i.fa.fa-angle-down.animated.infinite.fadeInDown
+      a.nav-link(href="#hero")
+        i.fa.fa-angle-down.animated.infinite.bounce
