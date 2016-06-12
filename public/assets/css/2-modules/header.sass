@@ -1,0 +1,102 @@
+section.header
+  color: #eee
+  font-family: fira sans
+
+  .header-wrap
+    background:
+      image: url(/assets/img/header-bg.jpg)
+      repeat: no-repeat
+      size: cover
+    height: 100vh
+    display: flex
+    flex-direction: column
+    align-items: center
+
+
+
+    .sticky-nav
+      position: fixed
+      width: 100%
+      height: 80px
+
+
+    .nav
+      background: rgba(0,0,0,0.3)
+      display: flex
+      justify-content: space-between
+      width: 100%
+      height: 80px
+
+      .logo
+        +hide-text
+        background:
+          image: url(/assets/img/logo-bc.svg)
+          repeat: no-repeat
+          size: contain
+          position: center
+        height: 70px
+        width: 70px
+        margin-left: 120px
+
+      .nav-bar
+        //background: pink
+        font-size: 15px
+        display: flex
+        align-items: center
+
+
+        ul
+          li
+            display: inline
+            padding: 5px 15px
+            border-bottom: solid 2px rgba(217,39,31,0)
+            //transition: border-bottom 0.3s ease-out
+            transition: color 0.2s ease-in-out
+            border-right: solid 1px rgba(225,225,225,0.4)
+
+            &:hover
+              color: #bbb
+
+            a
+              color: inherit
+
+            &:last-child
+              margin-right: 50px
+              border-right: none
+
+    .tagline
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      //background: pink
+      height: 50vh
+      width: 600px
+      padding-top: 120px
+      padding-bottom: 16px
+
+      h1
+        //background: pink
+        font-size: 55px
+        color: rgb(217,39,31)
+        text-align: center
+        margin: 0
+        //margin-top: 100px
+        //margin-bottom: 16px
+
+        span
+          color: #eee
+
+      p.lead
+        margin: 0px
+        //background: pink
+        text-align: center
+        font-weight: bolder
+        font-size: 20px
+
+    .arrow
+      margin-top: 67.5px
+
+      i.fa.fa-angle-down
+        font-size: 80px
+        color: #eee !important
